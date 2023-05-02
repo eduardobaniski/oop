@@ -1,3 +1,4 @@
+package ContaCorrente;
 public class ContaCorrente {
     private int numero, agencia;
     private double saldo;  
@@ -17,7 +18,7 @@ public class ContaCorrente {
         this.agencia = agencia;
         this.nome = nome;
     }
-    
+
     public int getNumero() {
         return numero;
     }
