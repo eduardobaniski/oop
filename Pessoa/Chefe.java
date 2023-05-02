@@ -9,4 +9,12 @@ public class Chefe extends Funcionario {
     public double bonificar(){  //Sobreposição do método
         return salario * 0.2;
     }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
 }
