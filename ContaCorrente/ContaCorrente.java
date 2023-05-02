@@ -1,47 +1,56 @@
-package ContaCorrente;
-public class ContaCorrente {
-    private int numero, agencia;
-    private double saldo;  
+class ContaCorrente{
     private String nome;
-    
-    
-
-    public ContaCorrente(int numero, int agencia, double saldo, String nome) {
+    private int numero, agencia;
+    private double saldo, limite;
+    public ContaCorrente(String nome, int numero, int agencia, double saldo, double limite){
+        this.nome = nome;
         this.numero = numero;
         this.agencia = agencia;
         this.saldo = saldo;
-        this.nome = nome;
-    }
-    
-    public ContaCorrente(int numero, int agencia, String nome) {
-        this.numero = numero;
-        this.agencia = agencia;
-        this.nome = nome;
+        this.limite = limite;
     }
 
-    public int getNumero() {
-        return numero;
-    }
-    public void setNumero(int numero) {
+    public ContaCorrente(String nome, int numero, int agencia, double saldo){
+        this.nome = nome;
         this.numero = numero;
-    }
-    public int getAgencia() {
-        return agencia;
-    }
-    public void setAgencia(int agencia) {
         this.agencia = agencia;
-    }
-    public double getSaldo() {
-        return saldo;
-    }
-    public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
-    public String getNome() {
-        return nome;
+
+    public ContaCorrente(String nome, int numero, int agencia){
+        this.nome = nome;
+        this.numero = numero;
+        this.agencia = agencia;
     }
-    public void setNome(String nome) {
+    public void setNome(String nome){
         this.nome = nome;
     }
-      
+    public void setNumero(int numero){
+        this.numero = numero;
+    }
+    public void setAgencia(int agencia){
+        this.agencia = agencia;
+    }
+    public void setSaldo(double saldo){
+        this.saldo = saldo;
+    }
+    public void setLimite(double limite){
+        this.limite = limite;
+    }
+
+    public String getNome(){
+        return this.nome;
+    }
+    public int getNumero(){
+        return this.numero;
+    }
+    public int getAgencia(){
+        return this.agencia;
+    }
+    public double getSaldo(){
+        return this.saldo;
+    }
+    public double getLimite(){
+        return this.limite;
+    }
 }
