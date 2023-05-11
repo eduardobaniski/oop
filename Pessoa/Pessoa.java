@@ -1,28 +1,38 @@
 
 public class Pessoa {
-    protected String nome, cpf;
+    private String nome, telefone;
+    private Data nascimento;
 
+    
 
-    public Pessoa(String nome, String cpf) {
+    public Pessoa(String nome, Data nascimento) {
         this.nome = nome;
-        this.cpf = cpf;
+        this.nascimento = nascimento;
     }
-
-    //Métodos get e set 
+    public Pessoa(String nome, String telefone, Data nascimento) {
+        this.nome = nome;
+        this.telefone = telefone;
+        this.nascimento = nascimento;
+    }
     public String getNome() {
         return nome;
     }
-
     public void setNome(String nome) {
         this.nome = nome;
     }
-
-    public String getCpf() {
-        return cpf;
+    public String getTelefone() {
+        return telefone;
+    }
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+    public Data getNascimento() {
+        return nascimento;
+    }
+    public void setNascimento(Data nascimento) {
+        this.nascimento = nascimento;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
+    
     
 }
