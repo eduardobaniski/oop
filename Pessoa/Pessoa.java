@@ -30,6 +30,10 @@ public class Pessoa {
         return nascimento;
     }
     public void setNascimento(Data nascimento) {
+        if(nascimento.getAno() > 2023){
+            System.out.println("Data invalida");
+            return;
+        }
         this.nascimento = nascimento;
     }
 

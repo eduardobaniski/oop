@@ -1,17 +1,34 @@
 public class Aluno extends Pessoa {
-    private String curso;
-
-    public Aluno(String nome, String cpf, String curso){
-        super(nome, cpf);
-        this.curso = curso;
+    private String ra;
+    private int disciplinas;
+    private boolean matricula = 0;
+    public Aluno(String nome, String telefone, Data nascimento, String ra) {
+        super(nome, telefone, nascimento);
+        this.ra = ra;
     }
-
-    public String getCurso() {
-        return curso;
+    public Aluno(String nome, Data nascimento, String ra) {
+        super(nome, nascimento);
+        this.ra = ra;
     }
-
-    public void setCurso(String curso) {
-        this.curso = curso;
+    public String getRa() {
+        return ra;
+    }
+    public void setRa(String ra) {
+        this.ra = ra;
+    }
+    public int getDisciplinas() {
+        return disciplinas;
+    }
+    public void setDisciplinas(int disciplinas) {
+        this.disciplinas = disciplinas;
+    }
+    public void matricular(int num){
+        this.matricula = true;
+        this.disciplinas += num;
     }
     
+    public double getCargaSemanal(){
+        return this.disciplinas * 4;
+    }
+
 }
