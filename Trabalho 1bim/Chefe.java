@@ -19,9 +19,9 @@ public class Chefe extends Funcionario {
         this.cargo = cargo;
     }
     public double bonificar(){
-        return this.salario * 0.2;
+        return this.getSalario() * 0.2;
     }
     public double getSalarioComBonificacao(){
-        return salario + bonificar();
+        return getSalario() + bonificar();
     }
 }
