@@ -1,5 +1,12 @@
 public class NotaOficial extends Nota {
-    private String cpf;
+    protected String cpf;
+
+    
+
+    public NotaOficial(String nome, double valor, String cpf) {
+        super(nome, valor);
+        this.cpf = cpf;
+    }
 
     public void desconto(){
         this.valor *= 0.9;

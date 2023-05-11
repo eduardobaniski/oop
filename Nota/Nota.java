@@ -1,6 +1,6 @@
 public class Nota {
-    private String nome;
-    private double valor;
+    protected String nome;
+    protected double valor;
 
     
     public Nota(String nome, double valor) {
