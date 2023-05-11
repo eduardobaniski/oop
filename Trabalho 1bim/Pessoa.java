@@ -37,6 +37,8 @@ public class Pessoa {
         this.nascimento = nascimento;
     }
 
-    
+    public String toString(){
+        return "Nome: "+nome+"\nTelefone: "+telefone+"\nData de nascimento: "+nascimento;
+      }
     
 }

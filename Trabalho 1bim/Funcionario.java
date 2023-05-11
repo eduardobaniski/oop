@@ -1,7 +1,6 @@
 public class Funcionario extends Pessoa {
     private String registro;
     private double salario;
-    //FALTA MÉTODO TOSTRING
 
     public double bonificar(){
         return this.salario * 0.1;
@@ -32,5 +31,9 @@ public class Funcionario extends Pessoa {
     public void setSalario(double salario) {
         this.salario = salario;
     }
+    public String toString(){
+        return super.toString()+"\nRegistro: "+registro+"\nSalário: "+salario;
+      }
+      
 
 }

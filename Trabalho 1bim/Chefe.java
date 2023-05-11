@@ -24,4 +24,7 @@ public class Chefe extends Funcionario {
     public double getSalarioComBonificacao(){
         return getSalario() + bonificar();
     }
+    public String toString(){
+        return super.toString() +"\nCargo: "+cargo;
+     }
 }

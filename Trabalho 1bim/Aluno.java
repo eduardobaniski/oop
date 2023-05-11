@@ -1,7 +1,7 @@
 public class Aluno extends Pessoa {
     private String ra;
     private int disciplinas;
-    private boolean matricula = 0;
+    private boolean matricula = false;
     public Aluno(String nome, String telefone, Data nascimento, String ra) {
         super(nome, telefone, nascimento);
         this.ra = ra;
@@ -30,5 +30,7 @@ public class Aluno extends Pessoa {
     public double getCargaSemanal(){
         return this.disciplinas * 4;
     }
-
+    public String toString(){
+        return super.toString()+"\nRA: "+ra;
+      }
 }
