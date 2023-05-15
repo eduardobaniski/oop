@@ -17,6 +17,10 @@ public class Aluno extends Pessoa {
         this.ra = ra;
     }
     public int getDisciplinas() {
+        if(matricula == false){
+            System.out.println("Aluno não matriculado, disciplinas indisponiveis.");
+            return 0;
+        }
         return disciplinas;
     }
     public void setDisciplinas(int disciplinas) {

@@ -6,7 +6,7 @@ public class Professor extends Funcionario{
     }
 
     public double calcularBonificacao(){
-        return 10*horasAula;
+        return 10.0*horasAula;
     }
     public double getSalarioComBonificacao(){
         return this.getSalario() + calcularBonificacao();
